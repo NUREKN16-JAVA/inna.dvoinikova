@@ -1,22 +1,17 @@
 package ua.nure.kn.dvoinikova.usermanagement;
 
 import static junit.framework.Assert.assertEquals;
-import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
-import ua.nure.kn.dvoinikova.usermanagement.User;
-
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.GregorianCalendar;
 
 
 public class UserTest {
     private static final Long ID = 1L;
 
-    //Test 1: С‚РµСЃС‚ РЅР° РёРјСЏ
+    //Test 1: тест на имя
     private static final String FIRST_NAME = "Inna";
     private static final String LAST_NAME = "Dvoinikova";
     private static final String FULL_NAME_ETALONE = "Dvoinikova, Inna";

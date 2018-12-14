@@ -3,6 +3,9 @@ package ua.nure.kn.dvoinikova.usermanagement.db;
 import ua.nure.kn.dvoinikova.usermanagement.User;
 
 import java.util.Collection;
+import ua.nure.kn.dvoinikova.usermanagement.User;
+
+import java.util.Collection;
 
 public interface UserDao {
     User create(User user) throws DatabaseException;
@@ -19,3 +22,4 @@ public interface UserDao {
 
     void setConnectionFactory(ConnectionFactory connectionFactory) throws DatabaseException;
 }
+

@@ -1,5 +1,4 @@
 package ua.nure.kn.dvoinikova.usermanagement.db;
-
 import java.util.Collection;
 import java.util.Date;
 
@@ -13,13 +12,13 @@ import ua.nure.kn.dvoinikova.usermanagement.User;
 
 public class HsqldbUserDaoTest extends DatabaseTestCase {
 
-    private static final String LASTNAME_FIND_ETALON = "Ivanov";
-    private static final String FIRSTNAME_FIND_ETALON = "Ivan";
+    private static final String LASTNAME_FIND_ETALON = "Gates";
+    private static final String FIRSTNAME_FIND_ETALON = "Bill";
 
     private static final int TABLE_SIZE_ETALON = 2;
 
-    private static final String LASTNAME_CREATE_ETALON = "Dvoinikova";
-    private static final String FIRSTNAME_CREATE_UPDATE_ETALON = "Inna";
+    private static final String LASTNAME_CREATE_ETALON = "Skorik";
+    private static final String FIRSTNAME_CREATE_UPDATE_ETALON = "Viktoria";
 
     private static final Long ID_FIND_ETALON = 1000L;
 
@@ -91,7 +90,7 @@ public class HsqldbUserDaoTest extends DatabaseTestCase {
 
     @Override
     protected IDatabaseConnection getConnection() throws Exception {
-        connectionFactory = new ConnectionFactoryImpl();
+        connectionFactory = new ConnectionFactoryImpl("org.hsqldb.jdbcDriver", "jdbc:hsqldb:file:db/usermanagement", "sa", "");
         return new DatabaseConnection(connectionFactory.createConnection());
     }
 

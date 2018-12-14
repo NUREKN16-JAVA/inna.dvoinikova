@@ -3,6 +3,7 @@ package ua.nure.kn.dvoinikova.usermanagement.db;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Properties;
 
 public class ConnectionFactoryImpl implements ConnectionFactory {
     private String driver = "org.hsqldb.jdbcDriver";
@@ -17,8 +18,8 @@ public class ConnectionFactoryImpl implements ConnectionFactory {
         this.password = password;
     }
 
-    public ConnectionFactoryImpl() {
-        // Auto-generated constructor stub
+    public ConnectionFactoryImpl(Properties properties) {
+        // Auto-generated
     }
 
     @Override
