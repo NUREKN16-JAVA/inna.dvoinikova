@@ -2,8 +2,8 @@
 <project name="usermanagement" default="clean" basedir=".">
 
     <property name="build-dir" value="${basedir}/target"/>
-    <property name="main-java-dir" value="/ua/nure/kn/gromak/usermanagement"/>
-    <property name="test-java-dir" value="${basedir}/src/test/java/ua/nure/kn/gromak/usermanagement"/>
+    <property name="main-java-dir" value="/ua/nure/kn/dvoinikova/usermanagement"/>
+    <property name="test-java-dir" value="${basedir}/src/test/java/ua/nure/kn/dvoinikova/usermanagement"/>
     <property name="classes-dir" value="${build-dir}/classes"/>
 
     <property name="ant-build-javac-source" value="1.8"/>
